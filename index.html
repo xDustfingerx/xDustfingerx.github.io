@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Phasmophobia Ghost App</title>
+		<link rel="stylesheet" href="PhasmoStyle.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
+		<script defer src="index.js" charset="utf-8"></script>
+	</head>
+	
+	
+	
+	<body>
+		<div id="Headline">
+			<header>Phasmophobia Ghost Calculator v0.1</header>
+		</div>
+	
+	
+	
+	
+	
+	
+	<div width="100%" align="center">
+		<br> <br>
+		
+		<table>
+			<tr>
+				<td>
+					<div class="filterInputs">
+					  <label><input type="radio" name="EMF" value="" checked><i></i>X</label>
+					  <label><input type="radio" name="EMF" value="EMF5"><i></i>EMF5 Confirmed</label>
+					  <label><input type="radio" name="EMF" value="noEMF5"><i></i>Exclude</label>
+					</div>
+
+					<div class="filterInputs">
+					  <label><input type="radio" name="SpiritBox" value="" checked><i></i>X</label>
+					  <label><input type="radio" name="SpiritBox" value="SpiritBox"><i></i>Spirit Box Confirmed</label>
+					  <label><input type="radio" name="SpiritBox" value="noSpiritBox"><i></i>Exclude</label>
+					</div>
+					
+					<div class="filterInputs">
+					  <label><input type="radio" name="Fingerprints" value="" checked><i></i>X</label>
+					  <label><input type="radio" name="Fingerprints" value="Fingerprints"><i></i>Fingerprints Confirmed</label>
+					  <label><input type="radio" name="Fingerprints" value="noFingerprints"><i></i>Exclude</label>
+					</div>
+					
+					<div class="filterInputs">
+					  <label><input type="radio" name="GhostOrb" value="" checked><i></i>X</label>
+					  <label><input type="radio" name="GhostOrb" value="GhostOrb"><i></i>Ghost Orb Confirmed</label>
+					  <label><input type="radio" name="GhostOrb" value="noGhostOrb"><i></i>Exclude</label>
+					</div>
+					
+					<div class="filterInputs">
+					  <label><input type="radio" name="SpiritWriting" value="" checked><i></i>X</label>
+					  <label><input type="radio" name="SpiritWriting" value="SpiritWriting"><i></i>Spirit Writing Confirmed</label>
+					  <label><input type="radio" name="SpiritWriting" value="noSpiritWriting"><i></i>Exclude</label>
+					</div>
+					
+					<div class="filterInputs">
+					  <label><input type="radio" name="FreezingTemps" value="" checked><i></i>X</label>
+					  <label><input type="radio" name="FreezingTemps" value="FreezingTemps"><i></i>Freezing Temps Confirmed</label>
+					  <label><input type="radio" name="FreezingTemps" value="noFreezingTemps"><i></i>Exclude</label>
+					</div>
+				</td>
+				<td>
+					<div class="returns" data-filterable="noEMF5 SpiritBox Fingerprints noGhostOrb SpiritWriting noFreezingTemps"><GhostTypes> <b>Spirit</b> <span style="font-size: 12pt; color: white">(Spirit Box + Fingerprints + Spirit Writing)</span></GhostTypes></div>
+					<div class="returns" data-filterable="noEMF5 SpiritBox Fingerprints noGhostOrb noSpiritWriting FreezingTemps"><GhostTypes> <b>Wraith</b> <span style="font-size: 12pt; color: white">(Spirit Box + Fingerprints + Freezing Temps)</span></GhostTypes></div>
+					<div class="returns" data-filterable="EMF5 noSpiritBox noFingerprints GhostOrb noSpiritWriting FreezingTemps"><GhostTypes> <b>Phantom</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Ghost Orbs + Freezing Temps)</span></GhostTypes></div>
+					<div class="returns" data-filterable="noEMF5 SpiritBox Fingerprints GhostOrb noSpiritWriting noFreezingTemps"><GhostTypes> <b>Poltergeist</b> <span style="font-size: 12pt; color: white">(Spirit Box + Fingerprints + Ghost Orbs)</span></GhostTypes></div>
+					<div class="returns" data-filterable="EMF5 noSpiritBox Fingerprints noGhostOrb noSpiritWriting FreezingTemps"><GhostTypes> <b>Banshee</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Fingerprints + Freezing Temps)</span></GhostTypes></div>
+					<div class="returns" data-filterable="EMF5 SpiritBox noFingerprints GhostOrb noSpiritWriting noFreezingTemps"><GhostTypes> <b>Jinn</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Spirit Box + Ghost Orbs)</span></GhostTypes></div>
+					<div class="returns" data-filterable="noEMF5 SpiritBox noFingerprints GhostOrb noSpiritWriting FreezingTemps"><GhostTypes> <b>Mare</b> <span style="font-size: 12pt; color: white">(Spirit Box + Ghost Orbs + Freezing Temps)</span></GhostTypes></div>
+					<div class="returns" data-filterable="EMF5 noSpiritBox Fingerprints noGhostOrb SpiritWriting noFreezingTemps"><GhostTypes> <b>Revenant</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Fingerprints + Spirit Writing)</span></GhostTypes></div>
+					<div class="returns" data-filterable="EMF5 noSpiritBox noFingerprints GhostOrb SpiritWriting noFreezingTemps"><GhostTypes> <b>Shade</b> <span style="font-size: 12pt; color: white">(EMF lvl 5+ Ghost Orbs + Spirit Writing)</span></GhostTypes></div>
+					<div class="returns" data-filterable="noEMF5 SpiritBox noFingerprints noGhostOrb SpiritWriting FreezingTemps"><GhostTypes> <b>Demon</b> <span style="font-size: 12pt; color: white">(Spirit Box + Spirit Writing + Freezing Temps)</span></GhostTypes></div>
+					<div class="returns" data-filterable="noEMF5 noSpiritBox noFingerprints GhostOrb SpiritWriting FreezingTemps"><GhostTypes> <b>Yurei</b> <span style="font-size: 12pt; color: white">(Ghost Orbs + Spirit Writing + Freezing Temps)</span></GhostTypes></div>
+					<div class="returns" data-filterable="EMF5 SpiritBox noFingerprints noGhostOrb SpiritWriting noFreezingTemps"><GhostTypes> <b>Oni</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Spirit Box + Spirit Writing)</span></GhostTypes></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	
+	<br> <br> <br> <br>
+	
+	
+		<div id="Evidence">
+				<table width="100%" cellspacing="10">
+					<tr>
+						<td>
+							<Evidence>EMF&nbsp;level&nbsp;5</Evidence>
+						</td>
+						<td>
+							<define>ElectroMagnetic Field Reader - MUST hit a level 5 reading to confirm. Will only peak at 5 when Ghost is interacting in environment.</define>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<Evidence>Spirit&nbsp;Box</Evidence>
+						</td>
+						<td>
+							<define>Must have the lights off and be near the ghost for it to answer. If the ghost is shy, it will require you to be the only person in the room.</define>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<Evidence>Fingerprints</Evidence>
+						</td>
+						<td>
+							<define>A ghost will leave behind a finger print when it interacts with a door, interacts with a light switch, or knocks on a window. You can see fingerprints by using the UV Light or the Glowstick. *Note* Footprints seen with UV do not count s Fingerprints</define>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<Evidence>Ghost&nbsp;Orb</Evidence>
+						</td>
+						<td>
+							<define>Visible in the computer screen using a Video Camera or a Head Mounted Camera with night vision. Ghost Orbs start emitting at the start of the round, and will continuously emit throughout the round and looks like a very small yellow floating orb.</define>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<Evidence>Spirit&nbsp;Writing</Evidence>
+						</td>
+						<td>
+							<define>If Ghost Writing is a piece of evidence, the ghost has a chance to interact with the Ghost Writing Book. You can increase the Ghost Activity in the room to increase this chance.</define>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<Evidence>Freezing&nbsp;Temps</Evidence>
+						</td>
+						<td>
+							<define>A room can appear to be as low as 3 Celsius, but if you see it drop any further then you can guarantee that Freezing Temperatures is a piece of evidence. *Note* Almost all ghost make rooms cold nut few make it below freezing.</define>
+						</td>
+					</tr>
+				</table>
+		</div>
+	
+	
+	
+		<div id="GhostTypes">
+			<GhostTypes> <table width="100%" cellpadding="10" cellspacing="10">
+				<tr>
+					<td colspan="6">
+						<b>Click a ghost type below for more detailed information</b>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Spirit
+					</td>
+					<td>
+						Wraith
+					</td>
+					<td>
+						Phantom
+					</td>
+					<td>
+						Poltergeist
+					</td>
+					<td>
+						Banshee
+					</td>
+					<td>
+						Jinn
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Mare
+					</td>
+					<td>
+						Revenant
+					</td>
+					<td>
+						Shade
+					</td>
+					<td>
+						Demon
+					</td>
+					<td>
+						Yurei
+					</td>
+					<td>
+						Oni
+					</td>
+				</tr>
+			</GhostTypes></table>
+		</div>	
+	</body>
+	</html>
