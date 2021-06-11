@@ -12,7 +12,7 @@
 	
 	<body>
 		<div id="Headline">
-			<header>Phasmophobia Ghost Calculator v0.1</header>
+			<header>Phasmophobia Ghost App v0.02</header>
 		</div>
 	
 	
@@ -52,7 +52,7 @@
 					
 					<div class="filterInputs">
 					  <label><input type="radio" name="SpiritWriting" value="" checked><i></i>X</label>
-					  <label><input type="radio" name="SpiritWriting" value="SpiritWriting"><i></i>Spirit Writing Confirmed</label>
+					  <label><input type="radio" name="SpiritWriting" value="SpiritWriting"><i></i>Ghost Writing Confirmed</label>
 					  <label><input type="radio" name="SpiritWriting" value="noSpiritWriting"><i></i>Exclude</label>
 					</div>
 					
@@ -63,18 +63,62 @@
 					</div>
 				</td>
 				<td>
-					<div class="returns" data-filterable="noEMF5 SpiritBox Fingerprints noGhostOrb SpiritWriting noFreezingTemps"><GhostTypes> <b>Spirit</b> <span style="font-size: 12pt; color: white">(Spirit Box + Fingerprints + Spirit Writing)</span></GhostTypes></div>
-					<div class="returns" data-filterable="noEMF5 SpiritBox Fingerprints noGhostOrb noSpiritWriting FreezingTemps"><GhostTypes> <b>Wraith</b> <span style="font-size: 12pt; color: white">(Spirit Box + Fingerprints + Freezing Temps)</span></GhostTypes></div>
-					<div class="returns" data-filterable="EMF5 noSpiritBox noFingerprints GhostOrb noSpiritWriting FreezingTemps"><GhostTypes> <b>Phantom</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Ghost Orbs + Freezing Temps)</span></GhostTypes></div>
-					<div class="returns" data-filterable="noEMF5 SpiritBox Fingerprints GhostOrb noSpiritWriting noFreezingTemps"><GhostTypes> <b>Poltergeist</b> <span style="font-size: 12pt; color: white">(Spirit Box + Fingerprints + Ghost Orbs)</span></GhostTypes></div>
-					<div class="returns" data-filterable="EMF5 noSpiritBox Fingerprints noGhostOrb noSpiritWriting FreezingTemps"><GhostTypes> <b>Banshee</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Fingerprints + Freezing Temps)</span></GhostTypes></div>
-					<div class="returns" data-filterable="EMF5 SpiritBox noFingerprints GhostOrb noSpiritWriting noFreezingTemps"><GhostTypes> <b>Jinn</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Spirit Box + Ghost Orbs)</span></GhostTypes></div>
-					<div class="returns" data-filterable="noEMF5 SpiritBox noFingerprints GhostOrb noSpiritWriting FreezingTemps"><GhostTypes> <b>Mare</b> <span style="font-size: 12pt; color: white">(Spirit Box + Ghost Orbs + Freezing Temps)</span></GhostTypes></div>
-					<div class="returns" data-filterable="EMF5 noSpiritBox Fingerprints noGhostOrb SpiritWriting noFreezingTemps"><GhostTypes> <b>Revenant</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Fingerprints + Spirit Writing)</span></GhostTypes></div>
-					<div class="returns" data-filterable="EMF5 noSpiritBox noFingerprints GhostOrb SpiritWriting noFreezingTemps"><GhostTypes> <b>Shade</b> <span style="font-size: 12pt; color: white">(EMF lvl 5+ Ghost Orbs + Spirit Writing)</span></GhostTypes></div>
-					<div class="returns" data-filterable="noEMF5 SpiritBox noFingerprints noGhostOrb SpiritWriting FreezingTemps"><GhostTypes> <b>Demon</b> <span style="font-size: 12pt; color: white">(Spirit Box + Spirit Writing + Freezing Temps)</span></GhostTypes></div>
-					<div class="returns" data-filterable="noEMF5 noSpiritBox noFingerprints GhostOrb SpiritWriting FreezingTemps"><GhostTypes> <b>Yurei</b> <span style="font-size: 12pt; color: white">(Ghost Orbs + Spirit Writing + Freezing Temps)</span></GhostTypes></div>
-					<div class="returns" data-filterable="EMF5 SpiritBox noFingerprints noGhostOrb SpiritWriting noFreezingTemps"><GhostTypes> <b>Oni</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Spirit Box + Spirit Writing)</span></GhostTypes></div>
+					<div class="returns" 
+						data-filterable="noEMF5 SpiritBox Fingerprints noGhostOrb SpiritWriting noFreezingTemps">
+						<GhostTypes> <b>Spirit</b> <span style="font-size: 12pt; color: white">(Spirit Box + Fingerprints + Ghost Writing)</span></GhostTypes></div>
+					
+					<div class="returns" 
+						data-filterable="noEMF5 SpiritBox Fingerprints noGhostOrb noSpiritWriting FreezingTemps">
+						<GhostTypes> <b>Wraith</b> <span style="font-size: 12pt; color: white">(Spirit Box + Fingerprints + Freezing Temps)</span></GhostTypes></div>
+					
+					<div class="returns"
+						data-filterable="EMF5 noSpiritBox noFingerprints GhostOrb noSpiritWriting FreezingTemps">
+						<GhostTypes> <b>Phantom</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Ghost Orbs + Freezing Temps)</span></GhostTypes></div>
+					
+					<div class="returns" 
+						data-filterable="noEMF5 SpiritBox Fingerprints GhostOrb noSpiritWriting noFreezingTemps">
+						<GhostTypes> <b>Poltergeist</b> <span style="font-size: 12pt; color: white">(Spirit Box + Fingerprints + Ghost Orbs)</span></GhostTypes></div>
+					
+					<div class="returns"
+						data-filterable="EMF5 noSpiritBox Fingerprints noGhostOrb noSpiritWriting FreezingTemps">
+						<GhostTypes> <b>Banshee</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Fingerprints + Freezing Temps)</span></GhostTypes></div>
+					
+					<div class="returns"
+						data-filterable="EMF5 SpiritBox noFingerprints GhostOrb noSpiritWriting noFreezingTemps">
+						<GhostTypes> <b>Jinn</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Spirit Box + Ghost Orbs)</span></GhostTypes></div>
+					
+					<div class="returns"
+						data-filterable="noEMF5 SpiritBox noFingerprints GhostOrb noSpiritWriting FreezingTemps">
+						<GhostTypes> <b>Mare</b> <span style="font-size: 12pt; color: white">(Spirit Box + Ghost Orbs + Freezing Temps)</span></GhostTypes></div>
+					
+					<div class="returns"
+						data-filterable="EMF5 noSpiritBox Fingerprints noGhostOrb SpiritWriting noFreezingTemps">
+						<GhostTypes> <b>Revenant</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Fingerprints + Ghost Writing)</span></GhostTypes></div>
+					
+					<div class="returns" 
+						data-filterable="EMF5 noSpiritBox noFingerprints GhostOrb SpiritWriting noFreezingTemps">
+						<GhostTypes> <b>Shade</b> <span style="font-size: 12pt; color: white">(EMF lvl 5+ Ghost Orbs + Ghost Writing)</span></GhostTypes></div>
+					
+					<div class="returns"
+						data-filterable="noEMF5 SpiritBox noFingerprints noGhostOrb SpiritWriting FreezingTemps">
+						<GhostTypes> <b>Demon</b> <span style="font-size: 12pt; color: white">(Spirit Box + Ghost Writing + Freezing Temps)</span></GhostTypes></div>
+					
+					<div class="returns"
+						data-filterable="noEMF5 noSpiritBox noFingerprints GhostOrb SpiritWriting FreezingTemps">
+						<GhostTypes> <b>Yurei</b> <span style="font-size: 12pt; color: white">(Ghost Orbs + Ghost Writing + Freezing Temps)</span></GhostTypes></div>
+					
+					<div class="returns"
+						data-filterable="EMF5 SpiritBox noFingerprints noGhostOrb SpiritWriting noFreezingTemps">
+						<GhostTypes> <b>Oni</b> <span style="font-size: 12pt; color: white">(EMF lvl 5 + Spirit Box + Ghost Writing)</span></GhostTypes></div>
+					
+					<div class="returns"
+						data-filterable="noEMF5 SpiritBox noFingerprints GhostOrb SpiritWriting noFreezingTemps">
+						<GhostTypes> <b>Yokai</b> <span style="font-size: 12pt; color: white">(Spirit Box + Ghost Orb + Ghost Writing)</span></GhostTypes></div>
+					
+					<div class="returns"
+						data-filterable="noEMF5 noSpiritBox Fingerprints GhostOrb SpiritWriting noFreezingTemps">
+						<GhostTypes> <b>Hantu</b> <span style="font-size: 12pt; color: white">(Spirit Box + Fingerprints + Ghost Writing)</span></GhostTypes></div>
+					
 				</td>
 			</tr>
 		</table>
