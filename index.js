@@ -1,4 +1,4 @@
-const el_filters = document.querySelectorAll('[name="EMF"], [name="SpiritBox"], [name="Fingerprints"], [name="GhostOrb"], [name="SpiritWriting"], [name="FreezingTemps"]'),
+const el_filters = document.querySelectorAll('[name="EMF"], [name="SpiritBox"], [name="Fingerprints"], [name="GhostOrb"], [name="GhostWriting"], [name="FreezingTemps"], [name="DOTS"]'),
   el_filterable = document.querySelectorAll('[data-filterable]');
 
 const applyFilter = () => {
