@@ -12,7 +12,7 @@
 	
 	<body>
 		<div id="Headline">
-			<header>Phasmophobia Ghost Calculator v0.2</header>
+			<header>Phasmophobia Ghost Calculator v0.3</header>
 		</div>
 	
 	
@@ -30,12 +30,6 @@
 					  <label><input type="radio" name="EMF" value="" checked><i></i>X</label>
 					  <label><input type="radio" name="EMF" value="EMF5"><i></i>EMF5 Confirmed</label>
 					  <label><input type="radio" name="EMF" value="noEMF5"><i></i>Exclude</label>
-					</div>
-					
-					<div class="filterInputs">
-					  <label><input type="radio" name="DOTS" value="" checked><i></i>X</label>
-					  <label><input type="radio" name="DOTS" value="DOTS"><i></i>DOTS Confirmed</label>
-					  <label><input type="radio" name="DOTS" value="noDOTS"><i></i>Exclude</label>
 					</div>
 
 					<div class="filterInputs">
@@ -67,7 +61,14 @@
 					  <label><input type="radio" name="FreezingTemps" value="FreezingTemps"><i></i>Freezing Temps Confirmed</label>
 					  <label><input type="radio" name="FreezingTemps" value="noFreezingTemps"><i></i>Exclude</label>
 					</div>
+					
+					<div class="filterInputs">
+					  <label><input type="radio" name="DOTS" value="" checked><i></i>X</label>
+					  <label><input type="radio" name="DOTS" value="DOTS"><i></i>DOTS Confirmed</label>
+					  <label><input type="radio" name="DOTS" value="noDOTS"><i></i>Exclude</label>
+					</div>
 				</td>
+				
 				<td>
 					<div class="returns" data-filterable="EMF5 SpiritBox noFingerprints noGhostOrb GhostWriting noFreezingTemps noDOTS"><GhostTypes> <b>Spirit</b> <span style="font-size: 12pt; color: white">(EMF5 + Spirit Box + Ghost Writing)</span></GhostTypes></div>
 					<div class="returns" data-filterable="EMF5 SpiritBox noFingerprints noGhostOrb noGhostWriting noFreezingTemps DOTS"><GhostTypes> <b>Wraith</b> <span style="font-size: 12pt; color: white">(EMF5 + Spirit Box + DOTS)</span></GhostTypes></div>
